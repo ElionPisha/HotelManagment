@@ -1,0 +1,39 @@
+GET http://127.0.0.1:8000/api/
+Content-Type: application/json
+Authorization: Token e50fa9c7443072d47ddad8337905262ce75ce3b9
+
+
+###POST Room Data
+POST http://127.0.0.1:8000/api/create
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "admin12345"
+}
+
+
+
+###POST Room Data
+PUT http://127.0.0.1:8000/api/4/edit
+Content-Type: application/json
+Authorization: Token e50fa9c7443072d47ddad8337905262ce75ce3b9
+
+{
+    "room_num": 8,
+        "guest": 1,
+        "check_in": "2021-08-31",
+        "check_out": "2021-08-32"
+}
+
+
+DELETE http://127.0.0.1:8000/api/4/delete
+Content-Type: application/json
+Authorization: Token e50fa9c7443072d47ddad8337905262ce75ce3b9
+
+{
+    "room_num": 8,
+        "guest": 1,
+        "check_in": "2021-08-31",
+        "check_out": "2021-08-32"
+}
